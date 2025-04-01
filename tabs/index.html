@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabs</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      li {
+        cursor: pointer;
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+        font-size: 30px;
+        color: rgb(168, 158, 158);
+      }
+      .first {
+        font-weight: bolder;
+        position: relative;
+      }
+      .first::after {
+        content: "";
+        width: 0px;
+        height: 4px;
+        background: black;
+        position: absolute;
+        left: -14px;
+        top: 40px;
+        animation: firstTab 1s forwards;
+      }
+      .firsta {
+        color: black;
+      }
+      @keyframes firstTab {
+        0% {
+          width: 0px;
+        }
+        100% {
+          width: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul style="display: flex; justify-content: space-around">
+        <li class="first"><a class="firsta" href="index.html">First Tab</a></li>
+        <li><a href="two.html">Second Tab</a></li>
+        <li><a href="three.html">Third Tab</a></li>
+        <li><a href="four.html">Fourth Tab</a></li>
+      </ul>
+    </nav>
+    <script src="script.js"></script>
+  </body>
+</html>

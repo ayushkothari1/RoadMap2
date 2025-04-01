@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5%;
+}
+.tab {
+  list-style: none;
+  color: rgb(168, 158, 158);
+  font-size: 35px;
+  cursor: pointer;
+}
+.tabs .active {
+  color: black;
+  position: relative;
+}
+.tabs .active::after {
+  content: "";
+  width: 0px;
+  height: 4px;
+  background: black;
+  position: absolute;
+  top: 110%;
+  left: -11%;
+  animation: active 1s forwards;
+}
+@keyframes active {
+  0% {
+    width: 0px;
+  }
+  100% {
+    width: 120%;
+  }
+}
+.section {
+  margin-top: 3%;
+  display: none;
+}
+.section h1 {
+  margin-left: 1%;
+  font-size: 30px;
+}
+.section p {
+  margin-left: 0.5%;
+  font-size: 20px;
+}
+.section.active {
+  display: block;
+}

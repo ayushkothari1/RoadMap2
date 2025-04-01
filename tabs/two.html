@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>two tab</title>
+    <style>
+      li {
+        cursor: pointer;
+        list-style: none;
+      }
+      a {
+        color: rgb(168, 158, 158);
+        text-decoration: none;
+        font-size: 30px;
+      }
+      .secondb {
+        color: black;
+        font-weight: bolder;
+      }
+      .second {
+        position: relative;
+      }
+      .second::after {
+        content: "";
+        width: 0px;
+        height: 4px;
+        background: black;
+        position: absolute;
+        left: -9px;
+        top: 40px;
+        animation: secondTab 1s forwards;
+      }
+      @keyframes secondTab {
+        0% {
+          width: 0px;
+        }
+        100% {
+          width: 165px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul style="display: flex; justify-content: space-around">
+        <li><a href="index.html">First Tab</a></li>
+        <li class="second">
+          <a class="secondb" href="two.html">Second Tab</a>
+        </li>
+        <li><a href="three.html">Third Tab</a></li>
+        <li><a href="four.html">Fourth Tab</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
