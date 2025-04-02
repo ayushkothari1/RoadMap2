@@ -107,4 +107,5 @@ footer {
   border: 2px solid white;
   border-radius: 6px;
   box-sizing: 6px #f6e8e8;
+  cursor: pointer;
 }

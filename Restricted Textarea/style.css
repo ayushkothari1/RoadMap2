@@ -1,0 +1,37 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.section {
+  margin-top: 10%;
+  margin-left: 10%;
+}
+.section h1 {
+  margin-left: 1%;
+  font-size: 35px;
+}
+.section textarea {
+  padding: 10px;
+  font-size: 20px;
+  margin-top: 5%;
+  width: 38%;
+  height: 30%;
+  border-radius: 20px;
+  border: 2px solid black;
+  position: relative;
+}
+.section textarea::placeholder {
+  /* padding: 10px; */
+  font-size: 15px;
+  color: grey;
+}
+.section span {
+  font-size: 20px;
+  position: absolute;
+  top: 54%;
+  left: 41%;
+  font-weight: bolder;
+}
+.red {
+  color: red;
+}
