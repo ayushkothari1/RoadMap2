@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Age Calculator</h1>
+    <form id="age-form">
+      <label for="birthdate">Enter your birthdate:</label>
+      <input type="text" id="birthdate" name="birthdate" placeholder="Select your birthdate">
+      <button type="submit">Calculate Age</button>
+    </form>
+    <div id="age-result" class="hidden">
+      <h2>Your Age:</h2>
+      <p id="age-output"></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
